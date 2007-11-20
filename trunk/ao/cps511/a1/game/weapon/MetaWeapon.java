@@ -3,9 +3,9 @@ package ao.cps511.a1.game.weapon;
 import ao.cps511.a1.game.Bullet;
 import ao.cps511.a1.game.weapon.impl.RandomFire;
 import ao.cps511.a1.game.weapon.impl.SinglePhoton;
-import ao.cps511.a1.game.weapon.impl.XrossAction;
 import ao.cps511.a1.game.weapon.impl.ivan.CrazyGun;
 import ao.cps511.a1.game.weapon.impl.ivan.InsaneGun;
+import ao.cps511.a1.game.weapon.impl.saturday.BigBangWeapon;
 
 import java.awt.*;
 import java.util.EnumMap;
@@ -20,20 +20,17 @@ public class MetaWeapon
     //--------------------------------------------------------------------
     private static EnumMap<Level, Weapon> weaponsByLevel =
             new EnumMap<Level, Weapon>(Level.class) {{
-//                put(Level.NEWBIE, new SinglePhoton());
-//                put(Level.BEGINNER, new BigBangWeapon());
-//                put(Level.AVERAGE, new CrazyGun());
-//                put(Level.STRONG, new InsaneGun());
-//                put(Level.PRO, new RandomFire());
-
                 put(Level.NEWBIE, new SinglePhoton());
-                put(Level.BEGINNER, new InsaneGun());
+                put(Level.BEGINNER, new BigBangWeapon());
                 put(Level.AVERAGE, new CrazyGun());
-                put(Level.STRONG, new XrossAction());
+                put(Level.STRONG, new InsaneGun());
                 put(Level.PRO, new RandomFire());
 
-                //                put(Level.BEGINNER, new SinglePhoton());
+//                put(Level.NEWBIE, new SinglePhoton());
+//                put(Level.BEGINNER, new SinglePhoton());
 //                put(Level.AVERAGE, new DoublePhoton());
+//                put(Level.STRONG, new XrossAction());
+//                put(Level.PRO, new RandomFire());
             }};
 
 
