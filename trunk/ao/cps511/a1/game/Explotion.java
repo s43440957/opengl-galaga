@@ -12,10 +12,10 @@ import java.awt.geom.Point2D;
 public class Explotion implements Visual
 {
     //--------------------------------------------------------------------
-    private static final int    STEPS      = 60;
+    private static final int    STEPS      = 40;
 
-    private static final double halfWidth  = 0.25;
-    private static final double halfHeight = 0.25;
+    private static final double halfWidth  = 1.25;
+    private static final double halfHeight = 1.25;
 
 
     //--------------------------------------------------------------------
